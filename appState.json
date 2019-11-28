@@ -1,0 +1,98 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "1206fc9c-5c7c-45f4-b5c9-c379cd6c82d5": {
+        "id": "1206fc9c-5c7c-45f4-b5c9-c379cd6c82d5",
+        "parent": null,
+        "name": "tg-bot-test",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "4fdf96a1-e91e-4525-9174-6bff0f000e4b"
+        ],
+        "isRemovable": false,
+        "filePath": "tg-bot-test"
+      },
+      "4fdf96a1-e91e-4525-9174-6bff0f000e4b": {
+        "id": "4fdf96a1-e91e-4525-9174-6bff0f000e4b",
+        "parent": "1206fc9c-5c7c-45f4-b5c9-c379cd6c82d5",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "tg-bot-test/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "05978441-ccf6-4a3d-a4e5-ebeafa1bd20c": {
+        "id": "05978441-ccf6-4a3d-a4e5-ebeafa1bd20c",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.tgBotTestfunction = require(\"./tg-bot-test/function.js\").handler;"
+      },
+      "c243684b-4390-4e45-9dd0-ecb4bfb39acb": {
+        "id": "c243684b-4390-4e45-9dd0-ecb4bfb39acb",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "rootNode": "1206fc9c-5c7c-45f4-b5c9-c379cd6c82d5",
+    "openFiles": [
+      "4fdf96a1-e91e-4525-9174-6bff0f000e4b"
+    ],
+    "currentFileId": "4fdf96a1-e91e-4525-9174-6bff0f000e4b",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "tg-bot-test",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-central1",
+    "platform": "GCP",
+    "platformRegions": {}
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "tg-bot-test",
+      "url": "https://github.com/sammosna/tg-bot-test"
+    }
+  }
+}
